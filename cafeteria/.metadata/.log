@@ -1,0 +1,1979 @@
+!SESSION 2020-03-04 22:18:25.496 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-03-04 22:20:28.715
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Personal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-03-04 22:34:29.281
+!MESSAGE Connection to http://jope.ow2.org/update/jope/site.xml failed on jope.ow2.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: jope.ow2.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-03-04 22:34:29.520
+!MESSAGE Connection to http://jope.ow2.org/update/jope/p2.index failed on jope.ow2.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: jope.ow2.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jface.text 4 0 2020-03-04 22:36:26.615
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocumentRegion.getStartOffset(BasicStructuredDocumentRegion.java:279)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocumentRegion.getText(BasicStructuredDocumentRegion.java:306)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeTagAttValueHelp(XMLTagInfoHoverProcessor.java:136)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeRegionHelp(XMLTagInfoHoverProcessor.java:113)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.computeHoverHelp(XMLTagInfoHoverProcessor.java:88)
+	at org.eclipse.wst.xml.ui.internal.taginfo.XMLTagInfoHoverProcessor.getHoverInfo(XMLTagInfoHoverProcessor.java:259)
+	at org.eclipse.jst.jsf.facelet.ui.internal.hover.FaceletHover.getHoverInfo(FaceletHover.java:70)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverInfo2(BestMatchHover.java:144)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.567
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.579
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.580
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.581
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.582
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.583
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.584
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.585
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.585
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.586
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.588
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:16.589
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.278
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.280
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.281
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.282
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.283
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.285
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.286
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.288
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.289
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.291
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.291
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:17.292
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.197
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap-reboot.css.map error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.205
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap-reboot.min.css.map error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.214
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap.min.css error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.221
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap-grid.min.css.map error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.227
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap.css error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.234
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap.css.map error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.235
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap-reboot.min.css error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.241
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap-grid.css.map error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.247
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap-grid.css error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.252
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap-grid.min.css error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.254
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap-reboot.css error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:18.259
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/css/bootstrap.min.css.map error in opening zip file
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.596
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.597
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.598
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.599
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.600
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.601
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.603
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.604
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.606
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.607
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.608
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.609
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.610
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.611
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.612
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.613
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.614
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.615
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.616
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:41.617
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.223
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.224
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.225
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.226
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.226
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.227
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.229
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.229
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.230
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.230
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.231
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.231
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.232
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.232
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.233
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.234
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.235
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.236
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.236
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-04 23:35:42.237
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:43.322
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/js/bootstrap.bundle.js.map error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:43.327
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/js/bootstrap.bundle.min.js error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:43.334
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/js/bootstrap.bundle.js error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:43.342
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/js/bootstrap.bundle.min.js.map error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:43.348
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/js/bootstrap.min.js.map error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:43.354
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/js/bootstrap.min.js error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:43.361
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/js/bootstrap.js error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-03-04 23:35:43.368
+!MESSAGE Taglib Index ZipException: C:/webtech/cafeteria/cafeteria/WebContent/bootstrap/js/bootstrap.js.map error in opening zip file
+!SESSION 2020-03-05 11:10:32.111 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:15.551
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:15.631
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:15.692
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:15.752
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:15.780
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:15.823
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:15.832
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:15.878
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:15.985
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:16.044
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:16.137
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:16.206
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:16.364
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:16.440
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:16.532
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:16.625
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:16.736
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:16.848
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:16.930
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.055
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.568
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.576
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.577
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.579
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.582
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.584
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.588
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.589
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.594
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.596
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.597
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.599
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.600
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.603
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.605
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.606
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.609
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.610
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.611
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:11:17.613
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-03-05 11:11:21.592
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Personal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.878
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.893
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.897
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.902
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.903
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.908
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.917
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.920
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.925
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.930
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.935
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.939
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.943
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.948
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.953
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.958
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.963
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.968
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.972
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 11:19:50.977
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.105
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.137
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.138
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.139
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.140
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.141
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.142
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.142
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.143
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.144
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.146
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.147
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.148
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.149
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.150
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.151
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.152
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.153
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.154
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.155
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.228
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.229
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.230
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.231
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.231
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.232
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.233
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.234
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.235
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.235
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.237
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.239
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.240
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.241
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.242
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.243
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.244
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.245
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.246
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:19:51.247
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.973
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.974
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.975
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.976
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.976
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.977
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.977
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.978
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.978
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.979
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.979
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.980
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.980
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.980
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.981
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.981
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.982
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.982
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.983
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:23.983
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.104
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.105
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.106
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.106
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.107
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.108
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.109
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.110
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.111
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.112
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.113
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.114
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.114
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.115
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.116
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.117
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.118
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.119
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.120
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.121
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.304
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.305
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.307
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.308
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.309
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.309
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.310
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.311
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.312
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.314
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.324
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.325
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.326
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.326
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.328
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.329
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.329
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.330
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.330
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:21:24.331
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.480
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.484
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.486
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.490
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.491
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.496
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.498
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.500
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.503
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.507
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.510
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.513
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.517
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.520
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.523
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.527
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.532
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.535
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.540
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-03-05 12:23:26.547
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.wst.sse.core 4 4 2020-03-05 13:00:12.535
+!MESSAGE can not get a buffer without a document reference
+!STACK 0
+java.lang.IllegalArgumentException: can not get a buffer without a document reference
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getBuffer(FileBufferModelManager.java:691)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.getModelPath(JSPTranslator.java:3276)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.writeExternal(JSPTranslator.java:3383)
+	at java.io.ObjectOutputStream.writeExternalData(ObjectOutputStream.java:1459)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1430)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslatorPersister.persistTranslator(JSPTranslatorPersister.java:265)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslatorPersister.persistTranslation(JSPTranslatorPersister.java:149)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPIndexManager.performAction(JSPIndexManager.java:139)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob$1.run(AbstractIndexManager.java:1561)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob.run(AbstractIndexManager.java:1559)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2020-03-05 13:03:42.198
+!MESSAGE IStructuredDocumentRegion management failed.
+!STACK 0
+org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementException: IStructuredDocumentRegion management failed.
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.removeStructuredDocumentRegion(XMLModelParser.java:2224)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeStructuredDocumentRegion(XMLModelParser.java:548)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeTagName(XMLModelParser.java:580)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeRegion(XMLModelParser.java:349)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.regionChanged(DOMModelImpl.java:801)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument._fireEvent(BasicStructuredDocument.java:544)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.fireStructuredDocumentEvent(BasicStructuredDocument.java:1182)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(BasicStructuredDocument.java:1966)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2425)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2410)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$2(JobSafeStructuredDocument.java:1)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$3.run(JobSafeStructuredDocument.java:143)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(EditorExecutionContext.java:150)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(JobSafeStructuredDocument.java:146)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replace(BasicStructuredDocument.java:2370)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$0(JobSafeStructuredDocument.java:1)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$1.run(JobSafeStructuredDocument.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(EditorExecutionContext.java:150)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replace(JobSafeStructuredDocument.java:108)
+	at org.eclipse.jface.text.projection.ProjectionTextStore.replace(ProjectionTextStore.java:106)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1098)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1123)
+	at org.eclipse.jface.text.projection.ProjectionDocument.replace(ProjectionDocument.java:627)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(DefaultDocumentAdapter.java:223)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7433)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8310)
+	at org.eclipse.swt.custom.StyledText.doBackspace(StyledText.java:2316)
+	at org.eclipse.swt.custom.StyledText.invokeAction(StyledText.java:7222)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:6078)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:6105)
+	at org.eclipse.swt.custom.StyledText.lambda$1(StyledText.java:5794)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1491)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4881)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:353)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4759)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4819)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:660)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2020-04-20 20:01:28.371 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-04-20 20:03:31.018
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Personal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:32.183
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:32.405
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:32.459
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:32.786
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:32.879
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:33.310
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:33.381
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:33.696
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:34.051
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:34.272
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:34.454
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:34.598
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:34.900
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:34.992
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:35.160
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:35.267
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:35.412
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:35.690
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:35.779
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:35.871
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.477
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.477
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.479
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.480
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.481
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.482
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.483
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.484
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.485
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.486
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.487
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.488
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.489
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.490
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.491
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.492
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.493
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.495
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.496
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:03:36.496
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.676
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.681
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.685
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.690
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.692
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.697
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.699
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.702
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.707
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.711
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.715
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.719
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.724
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.730
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.736
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.741
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.745
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.750
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.754
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-20 20:05:56.758
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2020-04-20 20:35:09.140
+!MESSAGE StructuredTextViewer.exception.verifyText
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.html.ui.internal.autoedit.StructuredAutoEditStrategyHTML.smartInsertForEndTag(StructuredAutoEditStrategyHTML.java:234)
+	at org.eclipse.wst.html.ui.internal.autoedit.StructuredAutoEditStrategyHTML.customizeDocumentCommand(StructuredAutoEditStrategyHTML.java:64)
+	at org.eclipse.jface.text.TextViewer.customizeDocumentCommand(TextViewer.java:3629)
+	at org.eclipse.jface.text.TextViewer.handleVerifyEvent(TextViewer.java:3660)
+	at org.eclipse.jface.text.source.projection.ProjectionViewer.handleVerifyEvent(ProjectionViewer.java:1248)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.handleVerifyEvent(StructuredTextViewer.java:771)
+	at org.eclipse.jface.text.TextViewer$TextVerifyListener.verifyText(TextViewer.java:427)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:277)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:780)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7401)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8310)
+	at org.eclipse.swt.custom.StyledText.doContent(StyledText.java:2512)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:6074)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:6105)
+	at org.eclipse.swt.custom.StyledText.lambda$1(StyledText.java:5794)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1491)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4881)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:353)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4759)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4819)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:660)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2020-04-23 16:15:55.572 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\webtech\cafeteria -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-04-23 16:16:11.839
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Personal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:15.584
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:15.691
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:15.852
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:15.958
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.019
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.065
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.067
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.111
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.331
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.460
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.541
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.653
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.734
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.823
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.853
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:16.949
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:17.006
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:17.325
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:17.406
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:17.656
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.850
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.851
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.852
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.854
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.855
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.856
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.857
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.858
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.859
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.860
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.861
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.862
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.863
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.864
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.865
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.874
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.875
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.876
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.877
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 16:16:18.878
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jst.jee 4 2 2020-04-23 16:44:08.883
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jst.jee".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.createModelResource(JEE5ModelProvider.java:209)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:190)
+	at org.eclipse.jst.jee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:44)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:233)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.getXmlWebApp(Web25MergedModelProvider.java:59)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:155)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.xmlModelChanged(Web25MergedModelProvider.java:146)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$XmlModelListener.modelsChanged(AbstractMergedModelProvider.java:91)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$NotifyRunner.run(JEE5ModelProvider.java:470)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.notifyListeners(JEE5ModelProvider.java:445)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.resourceChanged(JEE5ModelProvider.java:117)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$ResourceAdapter.notifyChanged(JEE5ModelProvider.java:81)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.setModified(ResourceImpl.java:1867)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.modified(ResourceImpl.java:486)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didRemove(ResourceImpl.java:447)
+	at org.eclipse.emf.common.util.AbstractEList.didClear(AbstractEList.java:170)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didClear(ResourceImpl.java:466)
+	at org.eclipse.emf.common.util.BasicEList.clear(BasicEList.java:639)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.doClear(NotifyingListImpl.java:1158)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.clear(NotifyingListImpl.java:1085)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.doUnload(ResourceImpl.java:1699)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doUnload(XMLResourceImpl.java:720)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.unload(ResourceImpl.java:1721)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.removeAndUnloadAllResources(ProjectResourceSetImpl.java:885)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.release(ProjectResourceSetImpl.java:866)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.release(ResourceSetWorkbenchEditSynchronizer.java:222)
+	at org.eclipse.jem.util.emf.workbench.ResourceSetWorkbenchSynchronizer.resourceChanged(ResourceSetWorkbenchSynchronizer.java:184)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.resourceChanged(ResourceSetWorkbenchEditSynchronizer.java:137)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:259)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:375)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:193)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:171)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:159)
+	at org.eclipse.ui.actions.WorkspaceAction$1.runInWorkspace(WorkspaceAction.java:459)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jst.jee 4 0 2020-04-23 16:44:08.902
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.createModelResource(JEE5ModelProvider.java:209)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:190)
+	at org.eclipse.jst.jee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:44)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:233)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.getXmlWebApp(Web25MergedModelProvider.java:59)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:155)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.xmlModelChanged(Web25MergedModelProvider.java:146)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$XmlModelListener.modelsChanged(AbstractMergedModelProvider.java:91)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$NotifyRunner.run(JEE5ModelProvider.java:470)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.notifyListeners(JEE5ModelProvider.java:445)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.resourceChanged(JEE5ModelProvider.java:117)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$ResourceAdapter.notifyChanged(JEE5ModelProvider.java:81)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.setModified(ResourceImpl.java:1867)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.modified(ResourceImpl.java:486)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didRemove(ResourceImpl.java:447)
+	at org.eclipse.emf.common.util.AbstractEList.didClear(AbstractEList.java:170)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didClear(ResourceImpl.java:466)
+	at org.eclipse.emf.common.util.BasicEList.clear(BasicEList.java:639)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.doClear(NotifyingListImpl.java:1158)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.clear(NotifyingListImpl.java:1085)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.doUnload(ResourceImpl.java:1699)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doUnload(XMLResourceImpl.java:720)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.unload(ResourceImpl.java:1721)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.removeAndUnloadAllResources(ProjectResourceSetImpl.java:885)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.release(ProjectResourceSetImpl.java:866)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.release(ResourceSetWorkbenchEditSynchronizer.java:222)
+	at org.eclipse.jem.util.emf.workbench.ResourceSetWorkbenchSynchronizer.resourceChanged(ResourceSetWorkbenchSynchronizer.java:184)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.resourceChanged(ResourceSetWorkbenchEditSynchronizer.java:137)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:259)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:375)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:193)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:171)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:159)
+	at org.eclipse.ui.actions.WorkspaceAction$1.runInWorkspace(WorkspaceAction.java:459)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-04-23 17:27:19.479 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-04-23 17:27:51.867
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Personal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:53.045
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:53.384
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:53.491
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:53.674
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:53.729
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:53.773
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:53.779
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:53.907
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:54.259
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:54.352
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:54.651
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:54.700
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:55.126
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:55.385
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:55.426
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:55.609
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:55.693
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:56.198
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:56.244
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:56.504
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.054
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.055
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.056
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.057
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.058
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.059
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.060
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.061
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.062
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.063
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.064
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.066
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.067
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.068
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.069
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.070
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.071
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.072
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.074
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:27:57.075
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.839
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.841
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.842
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.843
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.844
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.845
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.846
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.848
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.849
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.850
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.851
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.852
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.852
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.853
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.854
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.855
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.856
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.857
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.858
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-23 17:28:10.859
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+!SESSION 2020-04-26 16:01:18.928 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.307
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.391
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.443
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.496
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.513
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.552
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.565
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.607
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.712
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.806
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.895
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:28.951
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:29.122
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:29.161
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:29.247
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:29.343
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:29.455
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:29.708
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:29.828
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:29.942
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.886
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.895
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.896
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.897
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.897
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.899
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.899
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.900
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.901
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.902
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.903
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.904
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.904
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.905
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.906
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.906
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.907
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.908
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.909
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:02:31.910
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-04-26 16:02:31.981
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Personal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.416
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.432
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.435
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.439
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.440
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.443
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.444
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.447
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.450
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.455
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.459
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.462
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.466
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.469
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.473
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.477
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.480
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.485
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.490
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-26 16:46:10.496
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+!SESSION 2020-04-30 23:34:07.300 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:03.589
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:03.661
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:03.708
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:03.753
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:03.772
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:03.808
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:03.813
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:03.853
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:03.942
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:03.996
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:04.082
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:04.141
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:04.277
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:04.321
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:04.418
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:04.545
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:04.645
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:04.878
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:04.956
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:05.043
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.022
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.023
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.024
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.025
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-grid.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.027
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.029
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.031
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.034
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap-reboot.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.036
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.037
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.039
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.041
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/css/bootstrap.min.css.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.042
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.043
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.044
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.046
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.bundle.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.048
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.050
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.js.map [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.053
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js [in cafeteria]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-30 23:35:06.055
+!MESSAGE Invalid ZIP archive: WebContent/bootstrap/js/bootstrap.min.js.map [in cafeteria]
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-04-30 23:35:08.760
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Personal'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

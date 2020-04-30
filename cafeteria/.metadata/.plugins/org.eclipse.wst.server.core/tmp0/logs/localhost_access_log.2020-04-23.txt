@@ -1,0 +1,16 @@
+127.0.0.1 - - [23/Apr/2020:16:40:50 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:40:54 +0530] "GET /inventory_webapp/index.html HTTP/1.1" 200 847
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:40:54 +0530] "GET /inventory_webapp/mmlogin.css HTTP/1.1" 404 741
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:40:54 +0530] "GET /inventory_webapp/mmlog.png HTTP/1.1" 404 739
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:40:57 +0530] "GET /inventory_webapp/mmreg.html HTTP/1.1" 200 1274
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:40:57 +0530] "GET /inventory_webapp/mmreg.css HTTP/1.1" 404 739
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:40:57 +0530] "GET /inventory_webapp/mmlog.png HTTP/1.1" 404 739
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:41:59 +0530] "GET /inventory_webapp/mmreg.html?name=c_20&mailid=abcd@gmail.com&pwd=Hello123&repwd=hello1234 HTTP/1.1" 200 1274
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:41:59 +0530] "GET /inventory_webapp/mmreg.css HTTP/1.1" 404 739
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:41:59 +0530] "GET /inventory_webapp/mmlog.png HTTP/1.1" 404 739
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:42:09 +0530] "GET /inventory_webapp/mmreg.css HTTP/1.1" 404 739
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:42:09 +0530] "GET /inventory_webapp/mmlog.png HTTP/1.1" 404 739
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:42:10 +0530] "GET /inventory_webapp/mmlogin.css HTTP/1.1" 404 741
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:42:10 +0530] "GET /inventory_webapp/mmlog.png HTTP/1.1" 404 739
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:42:43 +0530] "GET /inventory_webapp/loginaction.jsp?mailid=abcd@gmail.com&pwd=Hii12 HTTP/1.1" 200 215
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:16:42:43 +0530] "GET /inventory_webapp/%C3%A2%E2%82%AC%C2%9Dbootstrap/js/bootstrap.js%C3%A2%E2%82%AC%C2%9D HTTP/1.1" 404 805

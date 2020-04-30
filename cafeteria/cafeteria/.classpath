@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap-grid.css"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap-grid.css.map"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap-grid.min.css"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap-grid.min.css.map"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap-reboot.css"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap-reboot.css.map"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap-reboot.min.css"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap-reboot.min.css.map"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap.css"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap.css.map"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap.min.css"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/css/bootstrap.min.css.map"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/js/bootstrap.bundle.js"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/js/bootstrap.bundle.js.map"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/js/bootstrap.bundle.min.js"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/js/bootstrap.bundle.min.js.map"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/js/bootstrap.js"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/js/bootstrap.js.map"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/js/bootstrap.min.js"/>
+	<classpathentry kind="lib" path="WebContent/bootstrap/js/bootstrap.min.js.map"/>
+	<classpathentry kind="lib" path="E:/mysql-connector.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

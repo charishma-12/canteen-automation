@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\webtech\cafeteria\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3578878267.index
+847560412.index
+1342671074.index
+2715624889.index
+2842473836.index
+4046616784.index

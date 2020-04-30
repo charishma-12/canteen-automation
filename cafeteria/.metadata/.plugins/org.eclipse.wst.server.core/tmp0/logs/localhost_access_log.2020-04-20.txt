@@ -1,0 +1,6 @@
+127.0.0.1 - - [20/Apr/2020:20:41:42 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [20/Apr/2020:20:41:45 +0530] "GET /inventory_webapp/index.html HTTP/1.1" 200 805
+0:0:0:0:0:0:0:1 - - [20/Apr/2020:20:41:45 +0530] "GET /inventory_webapp/mmlogin.css HTTP/1.1" 404 741
+0:0:0:0:0:0:0:1 - - [20/Apr/2020:20:41:45 +0530] "GET /inventory_webapp/mmlog.png HTTP/1.1" 404 739
+0:0:0:0:0:0:0:1 - - [20/Apr/2020:20:42:28 +0530] "GET /inventory_webapp/loginaction.jsp?mailid=charishma1259@gmail.com&pwd=1234 HTTP/1.1" 200 215
+0:0:0:0:0:0:0:1 - - [20/Apr/2020:20:42:28 +0530] "GET /inventory_webapp/%C3%A2%E2%82%AC%C2%9Dbootstrap/js/bootstrap.js%C3%A2%E2%82%AC%C2%9D HTTP/1.1" 404 805

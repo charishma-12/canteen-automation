@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\webtech\cafeteria\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3507035076.index
+\cafeteria\src
+C:\webtech\cafeteria\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2314890189.index
+\inventory webapp\src
